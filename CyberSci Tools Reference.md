@@ -1,5 +1,12 @@
 # CyberSci Tools Reference
 
+## Scenarios
+
+### Format Strings
+
+- If you see a program take in input and then print out what have inputted, a format strings attack will likely work (something like adding `%p%p%p%p%p...` as the input will print out the memory, which you can use cyberchef to find the ASCII values of the memory)
+- This works very well if the flag is already loaded into the memory
+
 ## LLDB
 
 ```
@@ -163,3 +170,7 @@ objdump -d <executable_name>
 # Command
 readelf -a <executable_name>
 ```
+
+# Stack Frame Diagram
+
+![image.png](image.png)
