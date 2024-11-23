@@ -114,3 +114,52 @@ ipython3
 # Command to unpack binary
 upx -d <executable_name> -o <unpacked_file_name>
 ```
+
+## XXD
+
+- Tool for making a hex dump or doing the reverse
+
+```
+# Command for dumping binary to hex and ASCII
+xxd -d <executable_name>
+```
+
+## Hexedit
+
+- Another tool for viewing binary executable in hex
+    - Note: Use `Ctrl + C` to exit, it is an interactive display
+
+```
+# Command
+hexedit <executable_name>
+```
+
+## Checksec
+
+- Checks the security information on an executable
+
+```
+# Command
+checksec <executable_name>
+
+# On different versions
+checksec --file=<executable_name>
+```
+
+## Objdump
+
+- Tool that shows addresses of functions and variables, as well as assembly instructions
+
+```
+# Command
+objdump -d <executable_name>
+```
+
+## Readelf
+
+- Reads the bytes of an ELF executable
+
+```
+# Command
+readelf -a <executable_name>
+```
